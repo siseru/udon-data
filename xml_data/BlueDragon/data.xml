@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<character location.name="table" location.x="575" location.y="450" posZ="0" rotate="0" roll="0">
+  <data name="character">
+    <data name="image">
+      <data type="image" name="imageIdentifier">4ff4203081cfdc2ac530c221cadfff7ab3002806103b96765d7f33ecfe139d11</data>
+    </data>
+    <data name="common">
+      <data name="name">BlueDragon</data>
+      <data name="size">2</data>
+    </data>
+    <data name="detail">
+      <data name="基本情報">
+        <data name="サイズ" type="">L</data>
+        <data name="種別">Dragon</data>
+        <data name="属性">LE</data>
+      </data>
+      <data name="データ">
+        <data name="AC" type="">18</data>
+        <data name="ヒット・ポイント" type="numberResource" currentValue="152">152</data>
+        <data name="移動速度">40 ft., burrow 20 ft., fly 80 ft.</data>
+        <data name="イニシアチブ">+0</data>
+        <data name="感覚他" type="note">Passive Perception 19
+Darkvision 120 ft.
+Blindsight 30 ft.</data>
+        <data name="特徴" type="note">Damage Immunities. Lightning</data>
+      </data>
+      <data name="能力値">
+        <data name="STR">21</data>
+        <data name="DEX">10</data>
+        <data name="CON">19</data>
+        <data name="INT">14</data>
+        <data name="WIS">13</data>
+        <data name="CHA">17</data>
+      </data>
+      <data name="技能">
+        <data name="Stealth">+4</data>
+        <data name="Perception">+9</data>
+      </data>
+      <data name="セーヴィング・スロー">
+        <data name="STR ST">+5</data>
+        <data name="DEX ST">+4</data>
+        <data name="CON ST">+8</data>
+        <data name="INT ST">+2</data>
+        <data name="WIS ST">+5</data>
+        <data name="CHA ST">+7</data>
+      </data>
+      <data name="アクション">
+        <data name="Multiattack, 1 bite, 2 claws">
+          <data name="タグ"></data>
+        </data>
+        <data name="攻撃1 Bite">
+          <data name="攻撃1">Bite [10ft]</data>
+          <data name="攻撃1修正">+9</data>
+          <data name="攻撃1ダメージ">2d10+5+1d10</data>
+          <data name="攻撃1D種別">[p], [lightning]</data>
+        </data>
+        <data name="攻撃2 Claw">
+          <data name="攻撃2">Claw [5ft]</data>
+          <data name="攻撃2修正">+9</data>
+          <data name="攻撃2ダメージ">2d6+5</data>
+        </data>
+        <data name="攻撃3 Lightning Breath (Recharge 5-6)">
+          <data name="攻撃3">Lightning Breath [60ft line]</data>
+          <data name="攻撃3DC">16 DEX ST</data>
+          <data name="攻撃3ダメージ">10d10</data>
+          <data name="攻撃3D種別">[lightning]</data>
+        </data>
+      </data>
+    </data>
+  </data>
+  <chat-palette dicebot="DungeonsAndDoragons">▼能力値判定
+1d20+(({STR}-10)/2) {name}のSTR check
+1d20+(({DEX}-10)/2) {name}のDEX check
+1d20+(({CON}-10)/2) {name}のCON check
+1d20+(({INT}-10)/2) {name}のINT check
+1d20+(({WIS}-10)/2) {name}のWIS check
+1d20+(({CHA}-10)/2) {name}のCHA check
+▼技能判定
+1d20{Perception} {name}のPercption check
+▼セーヴィング・スロー
+1d20{STR ST} {name}のSTR ST
+1d20{DEX ST} {name}のDEX ST
+1d20{CON ST} {name}のCON ST
+1d20{INT ST} {name}のINT ST
+1d20{WIS ST} {name}のWIS ST
+1d20{CHA ST} {name}のCHA ST
+1d20&gt;=10 {name}のDeath save
+▼戦闘
+1d20+(({DEX}-10)/2)  {name}のイニシアチブ判定！
+▼攻撃1
+1d20{攻撃1修正}　{name}の{攻撃1}攻撃！
+{攻撃1ダメージ} {name}の{攻撃1} {攻撃1D種別}ダメージ！ {攻撃1追加効果}
+▼攻撃2
+1d20{攻撃2修正}　{name}の{攻撃2}攻撃！
+{name}の{攻撃2}  {攻撃2追加効果}
+▼攻撃3
+DC {攻撃3DC} {name}の{攻撃3}攻撃！
+{攻撃3ダメージ} {name}の{攻撃3} {攻撃3D種別}ダメージ！ {攻撃3追加効果}</chat-palette>
+</character>

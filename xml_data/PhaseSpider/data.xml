@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<character location.name="table" location.x="550" location.y="425" posZ="0" rotate="0" roll="0">
+  <data name="character">
+    <data name="image">
+      <data type="image" name="imageIdentifier">ee52bb0ca40a82798ec44adbe9fb942325a743550c8b22998965d63b87d767fe</data>
+    </data>
+    <data name="common">
+      <data name="name">PhaseSpider</data>
+      <data name="size">2</data>
+    </data>
+    <data name="detail">
+      <data name="基本情報">
+        <data name="サイズ" type="">L</data>
+        <data name="種別">Monstrosity</data>
+        <data name="属性">unaligned</data>
+      </data>
+      <data name="データ">
+        <data name="AC" type="">13</data>
+        <data name="ヒット・ポイント" type="numberResource" currentValue="32">32</data>
+        <data name="移動速度">30 ft., climb 30 ft.</data>
+        <data name="イニシアチブ">+2</data>
+        <data name="感覚他" type="note">Passive Perception 10
+Darkvision 60 ft.</data>
+        <data name="特徴" type="note">Ethereal Jaunt
+Spider Climb
+Web Walker</data>
+      </data>
+      <data name="能力値">
+        <data name="STR">15</data>
+        <data name="DEX">15</data>
+        <data name="CON">12</data>
+        <data name="INT">6</data>
+        <data name="WIS">10</data>
+        <data name="CHA">6</data>
+      </data>
+      <data name="技能">
+        <data name="Stealth">+6</data>
+      </data>
+      <data name="セーヴィング・スロー">
+        <data name="STR ST">+2</data>
+        <data name="DEX ST">+2</data>
+        <data name="CON ST">+1</data>
+        <data name="INT ST">-2</data>
+        <data name="WIS ST">+0</data>
+        <data name="CHA ST">-2</data>
+      </data>
+      <data name="アクション">
+        <data name="攻撃1 Bite">
+          <data name="攻撃1">Bite</data>
+          <data name="攻撃1修正">+4</data>
+          <data name="攻撃1ダメージ">1d10+2</data>
+          <data name="攻撃1D種別">[p]</data>
+          <data name="攻撃1追加効果">DC11 Con ST, 4d8 [poison]</data>
+        </data>
+      </data>
+    </data>
+  </data>
+  <chat-palette dicebot="DungeonsAndDoragons">▼能力値判定
+1d20+(({STR}-10)/2) {name}のSTR check
+1d20+(({DEX}-10)/2) {name}のDEX check
+1d20+(({CON}-10)/2) {name}のCON check
+1d20+(({INT}-10)/2) {name}のINT check
+1d20+(({WIS}-10)/2) {name}のWIS check
+1d20+(({CHA}-10)/2) {name}のCHA check
+▼技能判定
+1d20{Perception} {name}のPercption check
+▼セーヴィング・スロー
+1d20{STR ST} {name}のSTR ST
+1d20{DEX ST} {name}のDEX ST
+1d20{CON ST} {name}のCON ST
+1d20{INT ST} {name}のINT ST
+1d20{WIS ST} {name}のWIS ST
+1d20{CHA ST} {name}のCHA ST
+1d20&gt;=10 {name}のDeath save
+▼戦闘
+1d20+(({DEX}-10)/2)  {name}のイニシアチブ判定！
+▼攻撃1
+1d20{攻撃1修正}　{name}の{攻撃1}攻撃！
+{攻撃1ダメージ} {name}の{攻撃1} {攻撃1D種別}ダメージ！ {攻撃1追加効果}
+▼攻撃2
+1d20{攻撃2修正}　{name}の{攻撃2}攻撃！
+{攻撃2ダメージ} {name}の{攻撃2} {攻撃2D種別}ダメージ！ {攻撃2追加効果}
+▼攻撃3
+1d20{攻撃3修正}　{name}の{攻撃3}攻撃！
+{攻撃3ダメージ} {name}の{攻撃3} {攻撃3D種別}ダメージ！ {攻撃3追加効果}</chat-palette>
+</character>

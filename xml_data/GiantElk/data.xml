@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<character location.name="table" location.x="225" location.y="500" posZ="0" rotate="0" roll="0">
+  <data name="character">
+    <data name="image">
+      <data type="image" name="imageIdentifier">6c4756fa189e59de989f44f944e2089f9d7c125a3c646990fedcf9764484fe9e</data>
+    </data>
+    <data name="common">
+      <data name="name">GiantElk</data>
+      <data name="size">2</data>
+    </data>
+    <data name="detail">
+      <data name="基本情報">
+        <data name="サイズ" type="">L</data>
+        <data name="種別">Beast</data>
+        <data name="属性">unaligned</data>
+      </data>
+      <data name="データ">
+        <data name="AC" type="">14</data>
+        <data name="ヒット・ポイント" type="numberResource" currentValue="42">42</data>
+        <data name="移動速度">60ft.</data>
+        <data name="イニシアチブ">+3</data>
+        <data name="感覚他" type="note">Passive Perception 14</data>
+        <data name="特徴" type="note">Charge (2d6, DC14 STR ST prone)</data>
+      </data>
+      <data name="能力値">
+        <data name="STR">19</data>
+        <data name="DEX">16</data>
+        <data name="CON">14</data>
+        <data name="INT">7</data>
+        <data name="WIS">14</data>
+        <data name="CHA">10</data>
+      </data>
+      <data name="技能">
+        <data name="Perception">+4</data>
+      </data>
+      <data name="セーヴィング・スロー">
+        <data name="STR ST">+4</data>
+        <data name="DEX ST">+3</data>
+        <data name="CON ST">+2</data>
+        <data name="INT ST">-2</data>
+        <data name="WIS ST">+2</data>
+        <data name="CHA ST">+0</data>
+      </data>
+      <data name="アクション">
+        <data name="攻撃1 Ram">
+          <data name="攻撃1">Ram [10ft]</data>
+          <data name="攻撃1修正">+6</data>
+          <data name="攻撃1ダメージ">2d6+4</data>
+          <data name="攻撃1D種別">[b]</data>
+          <data name="攻撃1追加効果"></data>
+        </data>
+        <data name="攻撃2 Hooves">
+          <data name="攻撃2">Hooves</data>
+          <data name="攻撃2修正">+6</data>
+          <data name="攻撃2ダメージ">4d8+4</data>
+          <data name="攻撃2D種別">[b]</data>
+          <data name="条件">against prone creature</data>
+        </data>
+      </data>
+    </data>
+  </data>
+  <chat-palette dicebot="DungeonsAndDoragons">▼能力値判定
+1d20+(({STR}-10)/2) {name}のSTR check
+1d20+(({DEX}-10)/2) {name}のDEX check
+1d20+(({CON}-10)/2) {name}のCON check
+1d20+(({INT}-10)/2) {name}のINT check
+1d20+(({WIS}-10)/2) {name}のWIS check
+1d20+(({CHA}-10)/2) {name}のCHA check
+▼技能判定
+1d20{Perception} {name}のPercption check
+▼セーヴィング・スロー
+1d20{STR ST} {name}のSTR ST
+1d20{DEX ST} {name}のDEX ST
+1d20{CON ST} {name}のCON ST
+1d20{INT ST} {name}のINT ST
+1d20{WIS ST} {name}のWIS ST
+1d20{CHA ST} {name}のCHA ST
+1d20&gt;=10 {name}のDeath save
+▼戦闘
+1d20+(({DEX}-10)/2)  {name}のイニシアチブ判定！
+▼攻撃1
+1d20{攻撃1修正}　{name}の{攻撃1}攻撃！
+{攻撃1ダメージ} {name}の{攻撃1} {攻撃1D種別}ダメージ！ {攻撃1追加効果}
+▼攻撃2
+1d20{攻撃2修正}　{name}の{攻撃2}攻撃！
+{name}の{攻撃2}  {攻撃2追加効果}
+▼攻撃3
+1d20{攻撃3修正}　{name}の{攻撃3}攻撃！
+{攻撃3ダメージ} {name}の{攻撃3} {攻撃3D種別}ダメージ！ {攻撃3追加効果}</chat-palette>
+</character>

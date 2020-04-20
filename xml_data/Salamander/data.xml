@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<character location.name="table" location.x="475" location.y="100" posZ="0" rotate="0" roll="0">
+  <data name="character">
+    <data name="image">
+      <data type="image" name="imageIdentifier">c41bba8159a4676fb657ca723f78f525c254f4c57277333b9e818929fd18d922</data>
+    </data>
+    <data name="common">
+      <data name="name">Salamander</data>
+      <data name="size">2</data>
+    </data>
+    <data name="detail">
+      <data name="基本情報">
+        <data name="サイズ" type="">L</data>
+        <data name="種別">Elemental</data>
+        <data name="属性">NE</data>
+      </data>
+      <data name="データ">
+        <data name="AC" type="">15</data>
+        <data name="ヒット・ポイント" type="numberResource" currentValue="90">90</data>
+        <data name="移動速度">30 ft.</data>
+        <data name="イニシアチブ">+2</data>
+        <data name="感覚" type="note">Passive Perception 10
+Darkvition 60ft</data>
+        <data name="特徴" type="note">Damage Vulnerability. Cold
+Damage Resistance. nonmagical weapon
+Damage Immunities. Fire
+Heated Body (2d6)
+Heated Weapon (1d6)</data>
+      </data>
+      <data name="能力値">
+        <data name="STR">18</data>
+        <data name="DEX">14</data>
+        <data name="CON">15</data>
+        <data name="INT">11</data>
+        <data name="WIS">10</data>
+        <data name="CHA">12</data>
+      </data>
+      <data name="技能">
+        <data name="Stealth">_0</data>
+        <data name="Perception">+0</data>
+      </data>
+      <data name="セーヴィング・スロー">
+        <data name="STR ST">+4</data>
+        <data name="DEX ST">+2</data>
+        <data name="CON ST">+2</data>
+        <data name="INT ST">+0</data>
+        <data name="WIS ST">+0</data>
+        <data name="CHA ST">+1</data>
+      </data>
+      <data name="アクション">
+        <data name="Multiattack, 1 spear, 1 tail">
+          <data name="タグ"></data>
+        </data>
+        <data name="攻撃1 Tail">
+          <data name="攻撃1">Tail [10ft]</data>
+          <data name="攻撃1修正">+7</data>
+          <data name="攻撃1ダメージ">2d6+4+2d6</data>
+          <data name="攻撃1D種別">[b], [fire]</data>
+          <data name="攻撃1追加効果">grappled + restrained (DC14)</data>
+        </data>
+        <data name="攻撃2 Spear">
+          <data name="攻撃2">Spear</data>
+          <data name="攻撃2修正">+7</data>
+          <data name="攻撃2ダメージ">2d6+4+1d6</data>
+          <data name="攻撃2D種別">[p], [fire]</data>
+        </data>
+      </data>
+    </data>
+  </data>
+  <chat-palette dicebot="DungeonsAndDoragons">▼能力値判定
+1d20+(({STR}-10)/2) {name}のSTR check
+1d20+(({DEX}-10)/2) {name}のDEX check
+1d20+(({CON}-10)/2) {name}のCON check
+1d20+(({INT}-10)/2) {name}のINT check
+1d20+(({WIS}-10)/2) {name}のWIS check
+1d20+(({CHA}-10)/2) {name}のCHA check
+▼技能判定
+1d20{Perception} {name}のPercption check
+▼セーヴィング・スロー
+1d20{STR ST} {name}のSTR ST
+1d20{DEX ST} {name}のDEX ST
+1d20{CON ST} {name}のCON ST
+1d20{INT ST} {name}のINT ST
+1d20{WIS ST} {name}のWIS ST
+1d20{CHA ST} {name}のCHA ST
+1d20&gt;=10 {name}のDeath save
+▼戦闘
+1d20+(({DEX}-10)/2)  {name}のイニシアチブ判定！
+▼攻撃1
+1d20{攻撃1修正}　{name}の{攻撃1}攻撃！
+{攻撃1ダメージ} {name}の{攻撃1} {攻撃1D種別}ダメージ！ {攻撃1追加効果}
+▼攻撃2
+1d20{攻撃2修正}　{name}の{攻撃2}攻撃！
+{攻撃2ダメージ} {name}の{攻撃2} {攻撃2D種別}ダメージ！ {攻撃2追加効果}
+▼攻撃3
+1d20{攻撃3修正}　{name}の{攻撃3}攻撃！
+{攻撃3ダメージ} {name}の{攻撃3} {攻撃3D種別}ダメージ！ {攻撃3追加効果}</chat-palette>
+</character>
